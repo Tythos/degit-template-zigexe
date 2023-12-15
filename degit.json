@@ -3,9 +3,10 @@
         "action": "search_replace",
         "files": [
             "build.zig",
-            "build.zig.zon"
+            "build.zig.zon",
+            "README.md"
         ],
-        "pattern": "\\{\\{project_name\\}\\}",
-        "replacement": "project_name"
+        "pattern": "\\{\\{name\\}\\}",
+        "replacement": "PROJECT_NAME"
     }
 ]
