@@ -8,7 +8,7 @@ pub fn build(b: *std.Build) void {
     // primary build artifact
     const exe = b.addExecutable(.{
         .name = "{{project_name}}",
-        .root_source_file = .{ .path = "src/main.zig" },
+        .root_source_file = b.path("src/main.zig"),
         .target = target,
         .optimize = optimize,
     });
